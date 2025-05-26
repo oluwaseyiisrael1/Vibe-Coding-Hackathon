@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TrackEase</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📊 TrackEase</h1>
+    <p>Use voice or photo to track your business!</p>
+
+    <button onclick="startVoiceInput()">🎙️ Record Income/Expense</button>
+    <input type="file" accept="image/*" onchange="handleImageUpload(event)" />
+
+    <div id="result"></div>
+    <div id="transactions"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="supabase.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
